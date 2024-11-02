@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Jaglan | Portfolio</title>
+    <link rel="stylesheet" href="mole.css">
+    <script src="mole.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="hidden">About</a></li>
+                <li><a href="#services" class="hidden">Education</a></li>
+                <li><a href="#about" class="hidden">Skills</a></li>
+                <li><a href="#projects" class="hidden">Achievements</a></li>
+                <li><a href="#contact" class="hidden">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <h1>Whac a Mole Game</h1> -->
+    <h2 id="score">Score: <span id="score-value">0</span></h2>
+    <p>Reach a score of 50.</p>
+    <div id="board"></div>
+
+    <!-- Overlay Section -->
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <button id="close-overlay">Close</button>
+            <div id="overlay-content"></div>
+        </div>
+    </div>
+
+    <!-- Hidden Content -->
+    <div id="content" class="hidden">
+        <section id="home" class="section">
+            <h1>Mohit Jaglan</h1>
+            <p>
+                Hello, I'm Mohit Jaglan, a Web Developer from New Delhi. Currently
+                pursuing an MSc in Informatics at Delhi University’s Institute of
+                Informatics and Communication, I am passionate about technology and
+                data-driven problem-solving. With a strong foundation in computer
+                science and informatics, I aim to build a career in data science, AI, and cloud computing. My experience in research projects and cloud platforms reflects my dedication, teamwork,
+                and leadership qualities.
+            </p>
+            <p>
+                Additionally, I also create content about programming, web development,
+                and animations on my YouTube channel. Reach out if you have any
+                questions or collaboration ideas!
+            </p>
+        </section>
+
+        <section id="about" class="section">
+            <h1>Info</h1>
+            <p>A section listing my core programming skills, technologies, and tools.</p>
+            <br />
+            <b>Languages:</b> Python, Java, C++, JavaScript, SQL
+            <br /><b>Frameworks:</b> React, Node.js, Django, Flask 
+            <br /><b>Databases:</b> MySQL, MongoDB, PostgreSQL 
+            <br /><b>Tools:</b> Git, Docker, Jenkins, AWS, Kubernetes
+            <br /><b>Development Methodologies:</b> Agile, Scrum
+        </section>
+
+        <section id="services" class="section">
+            <h1>Education Details</h1>
+            <p><b>Class 10 (2018)</b> CBSE - D.A.V. Public School Jind, Haryana - Percentage: <b>89%</b><br>
+               <b>Class 12 (2020)</b> CBSE - D.A.V. Public School Pitampura, Delhi - Percentage: <b>92%</b><br>
+               <b>Bachelor of Science Electronics (Hons.)</b> | Keshav Mahavidyalaya (Delhi University) - 2023 · CGPA:<b> 8.2</b><br>
+               <b>Masters of Science Informatics</b> | IIC (Delhi University) - 2025 (Pursuing) · CGPA:<b> 7.78 </b>(1st Year)
+            </p>
+            
+        </section>
+
+        <section id="projects" class="section">
+            <h1>Achievements</h1>
+            <p>
+                - Boxing: Gold medal in DAV Nationals championship, represented school at state-level competition<br>
+                - Boxing: Bronze medal in Delhi State<br>
+                - Captain of Football Team in College
+            </p>
+        </section>
+        
+        <section id="contact" class="section">
+            <h1>Ask Me Anything</h1>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required /><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Portfolio, All rights reserved. &reg;</p>
+        </footer>
+    </div>
+</body>
+</html>
